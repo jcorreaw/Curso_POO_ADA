@@ -16,12 +16,6 @@ public class Gato extends Animal {
         numeroDeGatos++;
     }
 
-    public void comer(){
-
-    }
-    public void dormir(){
-
-    }
     @Override
     public void soar(){
         System.out.println("MIAU MIAU");
