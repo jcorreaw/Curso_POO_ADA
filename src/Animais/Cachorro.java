@@ -1,13 +1,8 @@
 package Animais;
 
-public class Cachorro {
+public class Cachorro extends Animal{
     private static int numeroDeCachorros;
-    private String nome;
-    private String cor;
-    private int altura;
-    private double peso;
     private int tamanhoDoRabo;
-    private String estadoDeEspirito;
 
     public Cachorro() {
 
@@ -77,7 +72,9 @@ public class Cachorro {
     public void comer() {
     }
 
-    public void latir() {
+
+   @Override
+    public void soar() {
         System.out.println("AU AU");
     }
 
@@ -93,7 +90,7 @@ public class Cachorro {
             case "Pisar na patinha" -> this.estadoDeEspirito = "Triste";
             default -> this.estadoDeEspirito = "Neutro";
         }
-        return estadoDeEspirito;
+        return this.estadoDeEspirito;
     }
 
     @Override
